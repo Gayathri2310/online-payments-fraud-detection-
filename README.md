@@ -1,25 +1,23 @@
 💳 Online Payments Fraud Detection Using Machine Learning
-📌 Project Overview
+📌 Introduction
 
-Online payment fraud is increasing rapidly with the growth of digital transactions. This project uses Machine Learning techniques to detect fraudulent transactions and classify them as Fraud or Legitimate.
+With the rapid growth of digital transactions, online payment fraud has become a major financial threat. Fraudulent activities can lead to significant monetary losses and security risks. This project focuses on developing a Machine Learning model to automatically detect fraudulent transactions and improve payment security systems.
 
-The system analyzes transaction data and predicts whether a payment is suspicious based on different features.
+🎯 Aim of the Project
 
-🎯 Objective
+The main aim of this project is to build a predictive model that can accurately classify online transactions as Fraudulent or Legitimate using machine learning algorithms.
 
-To build a machine learning model that detects fraudulent online payments.
+🧠 Problem Statement
 
-To reduce financial loss by identifying suspicious transactions.
+Manual detection of fraudulent transactions is time-consuming and inefficient. Therefore, an automated system is required to analyze transaction patterns and identify suspicious activities in real time.
 
-To improve transaction security using predictive analytics.
+📊 Dataset Description
 
-📂 Dataset
-
-The dataset contains transaction details such as:
+The dataset contains various features related to online transactions such as:
 
 Transaction Type
 
-Amount
+Transaction Amount
 
 Old Balance
 
@@ -29,98 +27,79 @@ Destination Account
 
 Transaction Time
 
-The target variable:
+Target Variable:
 
-1 → Fraud
+0 → Legitimate Transaction
 
-0 → Legitimate
+1 → Fraudulent Transaction
 
-⚙️ Technologies Used
+🔍 Methodology
+1️⃣ Data Collection
 
-Python
+Collected structured transaction data for fraud detection analysis.
 
-Pandas
-
-NumPy
-
-Scikit-learn
-
-Matplotlib
-
-Seaborn
-
-Flask (for web application)
-
-🔄 Project Workflow
-
-Data Collection
-Collected online payment transaction dataset.
-
-Data Preprocessing
+2️⃣ Data Preprocessing
 
 Handling missing values
 
-Encoding categorical variables
+Removing duplicate records
 
-Feature scaling
+Encoding categorical features
 
-Exploratory Data Analysis (EDA)
+Feature scaling and normalization
 
-Univariate analysis
+3️⃣ Exploratory Data Analysis (EDA)
 
-Bivariate analysis
+Univariate Analysis
 
-Multivariate analysis
+Bivariate Analysis
 
-Model Building & Training
+Multivariate Analysis
 
-Decision Tree
+Correlation Heatmap
 
-Random Forest
+4️⃣ Model Building
+
+The following machine learning algorithms were implemented:
 
 Logistic Regression
 
-Model Evaluation
+Decision Tree
 
-Accuracy
+Random Forest Classifier
+
+5️⃣ Model Evaluation
+
+Models were evaluated using:
+
+Accuracy Score
 
 Confusion Matrix
 
-Classification Report
+Precision & Recall
 
-Model Deployment
+F1-Score
 
-Saved model using Pickle
+📈 Results
 
-Integrated with Flask web application
+Among all the implemented models, the Random Forest Classifier provided the highest accuracy and better fraud detection performance.
 
-📊 Model Performance
+🌟 Applications
 
-The Random Forest model achieved better accuracy compared to other models and was selected for deployment.
+Banking and Financial Institutions
 
-🚀 How to Run the Project
+E-commerce Platforms
 
-Clone the repository:
+Online Payment Gateways
 
-git clone https://github.com/your-username/your-repo-name.git
+Digital Wallet Services
 
-Install required libraries:
+🔮 Future Scope
 
-pip install -r requirements.txt
+Integration with real-time transaction systems
 
-Run the Flask app:
+Implementation of Deep Learning models
 
-python app.py
+Deployment on cloud platforms
 
-Open in browser:
-
-http://127.0.0.1:5000/
-📌 Future Improvements
-
-Use Deep Learning models
-
-Implement real-time fraud detection
-
-Deploy on cloud platforms
-
-Improve model accuracy with feature engineering
+Enhancing security using AI-based monitoring
